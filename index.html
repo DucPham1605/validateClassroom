@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let regExp = /^[CAP][0-9]{4}[GHIKLM]$/;
+   function is_Class(str) {
+       if (regExp.test(str)) {
+           return true;
+       }
+       else {
+           return false;
+       }
+   }
+
+   let Class = "C0318G";
+   console.log(is_Class(Class));
+   Class = "P0323A";
+   console.log(is_Class(Class));
+
+</script>
+</body>
+</html>
